@@ -31,6 +31,7 @@ internal class Program
             Console.WriteLine(str[i]);
             byte[] bytes = sjis.GetBytes(str[i].ToString());
 
+            // 文字コードを計算
             int code = 0;
             foreach (byte item in bytes)
             {
